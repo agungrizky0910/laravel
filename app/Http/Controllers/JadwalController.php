@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\alat;
-use App\Models\petugas;
 use Illuminate\Http\Request;
 
-class AlatController extends Controller
+class JadwalController extends Controller
 {
     public function index(Request $request)
     {
@@ -16,8 +14,7 @@ class AlatController extends Controller
             $data_alat = \App\Models\alat::all();
         }
 
-        $data_user = $request->session()->get('user.data.0');
-        return view('alat.index', ['data_alat' => $data_alat, 'data_user' => $data_user]);
+        return view('jadwal.index', ['data_alat' => $data_alat]);
     }
     public function create(Request $request)
     {
@@ -33,22 +30,5 @@ class AlatController extends Controller
 
         $alat = \App\Models\alat::create($cred);
         return redirect('/alat')->with('sukses', 'Data Berhasil Di input');
-    }
-    public function edit($id)
-    {
-        $alat = \App\Models\alat::find($id);
-        return view('alat/edit', ['alat' => $alat]);
-    }
-    public function update(Request $request, $id)
-    {
-        $alat = \App\Models\alat::find($id);
-        $alat->update($request->all());
-        return redirect('/alat')->with('sukses', 'Data Berhasil Di Update');
-    }
-    public function delete($id)
-    {
-        $alat = \App\Models\alat::find($id);
-        $alat->delete($alat);
-        return redirect('/alat')->with('sukses', 'Data Berhasil Di Delete');
     }
 }

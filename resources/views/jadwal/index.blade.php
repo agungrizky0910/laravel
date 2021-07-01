@@ -76,15 +76,15 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1">Merek/Type</label>
-                        <input name="merek_type" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Merek/Type">
+                        <input name="merek_type" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Merek/Type">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1">Range/Resolusi</label>
-                        <input name="range_resolusi" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Range/Resolusi">
+                        <input name="range_resolusi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Range/Resolusi">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">No_Resi</label>
-                        <input name="no_resi" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No_Resi">
+                        <input name="no_resi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No_Resi">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Pemegang</label>

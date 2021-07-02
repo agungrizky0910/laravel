@@ -7,11 +7,11 @@
                 <div class="panel">
                     <div class="panel-heading">
                         <h3 class="panel-title">Data Alat Kalibrasi</h3>
-                        <!-- <div class="right">
+                        <div class="right">
                             <span type="button" class="col-md-12 btn btn-primary btnAddAlat" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="lnr lnr-plus-circle"> Tambah Data Alat</i>
                             </span>
-                        </div> -->
+                        </div>
                     </div>
                     @yield('jadwal1')
                     <div class="panel-body">
@@ -41,8 +41,8 @@
                                     <td>{{$alat->no_registrasi}}</td>
                                     <td>{{$alat->tgl_kalibrasi}}</td>
                                     <td>
-                                        <a href="/alat/{{$alat->id}}/edit" class="btn btn-primary btn-sm"> Proses </a>
-                                        <!-- <a href="/alat/{{$alat->id}}/delete" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda Yakin Akan Menghapus Data Ini ?')">Delete</a> -->
+                                        <a href="/alat/{{$alat->id}}/edit" class="btn btn-primary btn-sm"> Edit </a>
+                                        <a href="/alat/{{$alat->id}}/delete" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda Yakin Akan Menghapus Data Ini ?')">Delete</a>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -76,15 +76,15 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1">Merek/Type</label>
-                        <input name="merek_type" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Merek/Type">
+                        <input name="merek_type" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Merek/Type">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1">Range/Resolusi</label>
-                        <input name="range_resolusi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Range/Resolusi">
+                        <input name="range_resolusi" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Range/Resolusi">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">No_Resi</label>
-                        <input name="no_resi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No_Resi">
+                        <input name="no_resi" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No_Resi">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Pemegang</label>
@@ -115,11 +115,11 @@
 </div>
 @endsection
 @section('js')
-<!-- <script>
+<script>
     $(document).ready(function() {
         $('.btnAddAlat').on('click', function() {
             $('#exampleModal').modal('show');
         });
     })
-</script> -->
+</script>
 @endsection

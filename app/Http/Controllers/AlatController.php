@@ -51,4 +51,7 @@ class AlatController extends Controller
         $alat->delete($alat);
         return redirect('/alat')->with('sukses', 'Data Berhasil Di Delete');
     }
+    public function proses($id)
+    {
+    }
 }

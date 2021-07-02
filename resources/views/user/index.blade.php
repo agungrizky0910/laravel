@@ -4,7 +4,7 @@
 <div class="main">
     <div class="main-content">
         <div class="container-fluid">
-            <div class="col-md-14">
+            <div class="col-md-15">
                 <div class="panel">
                     <div class="panel-heading">
                         <h3 class="panel-title">Data Alat Kalibrasi</h3>
@@ -23,6 +23,7 @@
                                     <th>Password</th>
                                     <th>remember token</th>
                                     <th>Id Role</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -31,6 +32,7 @@
                                     <td>{{$value->name}}</td>
                                     <td>{{$value->email}}</td>
                                     <td>{{$value->password}}</td>
+                                    <td>{{$value->remember_token}}</td>
                                     <td>{{$value->id_role}}</td>
 
                                     <td>
@@ -78,7 +80,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1">Id_Role</label>
-                        <input name="id_role" type="integer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Posisi user">
+                        <input name="id_role" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Id Role">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1">Remember Token</label>
+                        <input name="remember_token" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Remember Token">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

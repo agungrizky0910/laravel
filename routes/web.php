@@ -61,3 +61,8 @@ use App\Http\Controllers\JadwalController;
 //     redirect('/jadwal/index');
 // });
 Route::get('/jadwal', [JadwalController::class, 'index']);
+
+//proses
+use App\Http\Controllers\ProsesController;
+
+Route::get('/proses', [ProsesController::class, 'index']);

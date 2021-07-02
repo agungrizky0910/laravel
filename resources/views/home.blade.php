@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-75 mb-5">Aplikasi untuk pengecekan alat kalibrasi pada PT. GRAKINDO MAJU SUKSES</p>
-                    <a class="btn btn-primary btn-xl" href="/login">GO</a>
+                    <a class="btn btn-primary btn-xl" href="/user">GO</a>
                 </div>
             </div>
         </div>
